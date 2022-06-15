@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.bgimage {
+    position: relative;
+    background-image: url("assets/paul-griffin-WWST6E8LxeE-unsplash.jpg");
+    /* background-clip: border-box; */
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgimage::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.8rem;
+    background-color: #3d2f24;
+    padding: 20px 80px;
+    margin: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+
+}  
